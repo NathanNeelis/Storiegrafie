@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fotografie van mijn reizen naar Italië en Schotland in de jaren 2016, 2017 en 2018." />
+    <meta name="keywords" content="Fotografie, Alpen, Schotland, Italië, Alpisnme, Wandelingen, Hikes, Natuur, gallerij, vakantie" />
+    <title>ImageNaat Storiegrafie</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Hieronder de fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Begin navigatie -->
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li id="stories"> <a href="stories.html"> Stories </a></li>
+                <li> <a href="contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+        <!-- Eind navigatie -->
+           <figure>
+            <video poster="images/poster.jpg" autoplay preload loop>
+                <source src="video/video-italie3_1000x600.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="video/video-italie3_1000x600.webm" type='video/webm;codecs="vp8, vorbis"' />
+                <p> Sfeerimpressie omgeving basecamp Monta Rosa op 4250 meter hoogte.</p>
+            </video>
+        </figure>
+        <!-- code uit boek: HTML&CSS van James Ducket - Hoofdstuk 9  blz 214 -->
+
+        <div id="title">
+            <h1>Italië 2018</h1>
+            <h2>Het Monta Rosa gebergte op <em>4250 meter</em> hoogte!</h2>
+            <a href="#instagram">
+                <img src="images/iconen/arrowdown.png" alt="">
+                <p>Up to date blijven?</p>
+            </a>
+            <!-- Bron icoon down by Brandy Bora from the Noun Project: https://thenounproject.com/search/?q=down&i=1247052 -->
+        </div> <!-- eind div title -->
+    </header>
+
+    <main>
+        <!-- main content -->
+        <article>
+            <div id="instagram">
+                <h3>Mijn fotografie reizen..</h3>
+                <p>Elke zomer trek ik er weer op uit in de natuur om de meest mooie plekken te bezoeken. Zo ben ik afgelopen jaren in Italië en Schotland geweest. Wil je op de hoogte blijven van hoogtepunten? Volg me dan op Instragram! </p>
+                <div id="btn-insta">
+                    <p><a href="https://www.instagram.com/imagenaat/" target="_blank">Volg me hier op instagram! <img src="images/iconen/instagram_108x108px.png" alt=""></a></p>
+                </div> <!-- eind div btn-insta -->
+                <!-- bron logo instagram: https://www.brandsoftheworld.com/logo/instagram-12 -->
+            </div><!-- eind div instagram -->
+        </article>
+
+    </main>
+
+    <footer>
+        <div id="wrap-footer">
+            <section id="nieuwsbrief">
+                <h4>Schrijf je in voor de nieuwsbrief!</h4>
+                <form action="subscribed.html" method="get">
+                    <label for="email-nieuwsbrief"> Email</label>
+                    <input type="text" name="email-nieuwsbrief" id="email-nieuwsbrief" placeholder="E-mailadres" />
+                    <button type="submit" name="subcribe" id="subscribe" value="subscribe"> Subcribe</button>
+                </form>
+            </section><!-- eind section nieuwsbrief-->
+
+            <section id="gegevens">
+                <h4>Nathan Neelis</h4>
+                <p>Venatorstraat 29</p>
+                <p>1827NS te Alkmaar</p>
+                <div id="foto-nathan">
+                    <img src="images/nathan.png" alt="Foto van Nathan">
+                </div><!-- eind div foto-nathan-->
+            </section><!-- eind section gegevens-->
+
+            <section id="location">
+                <figure>
+                    <h4>Hier kan je me vinden!</h4>
+                    <img src="images/locatie.jpg" alt="Locatie ImageNaat Fotografie">
+                    <figcaption>Locatie ImageNaat Fotografie</figcaption>
+                </figure>
+            </section><!-- eind section location-->
+        </div><!-- eind wrap-footer-->
+
+        <div id="copyright">
+            <p>&copy; 2019 Nathan Neelis</p>
+        </div><!-- eind div copyright -->
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fotografie van mijn reizen naar Italië en Schotland in de jaren 2016, 2017 en 2018." />
+    <meta name="keywords" content="Fotografie, Alpen, Schotland, Italië, Alpisnme, Wandelingen, Hikes, Natuur, gallerij, vakantie" />
+    <title>ImageNaat Storiegrafie</title>
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Hieronder de fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Begin navigatie -->
+        <nav>
+            <ul>
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="stories.html"> Stories </a></li>
+                <li> <a href="contact.html"> Contact </a></li>
+            </ul>
+        </nav>
+        <!-- Eind navigatie -->
+    </header>
+
+    <main>
+        <!-- Begin contact formulier -->
+        <h1 class="title-small">Neem contact met mij op!</h1>
+        <form action="verstuur.html" method="post">
+            <fieldset>
+                <legend> Personalia </legend>
+                <label for="firstname"> Voornaam</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Voornaam" />
+
+                <label for="lastname"> Achternaam</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Achternaam" />
+
+                <label for="birthdate"> Geboortedatum</label>
+                <input type="date" name="birthdate" id="birthdate" placeholder="dd/mm/jjjj" />
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact informatie</legend>
+                <label for="telefoon"> Telefoonnummer</label>
+                <input type="tel" name="telefoon" id="telefoon" placeholder="(+31)6 123 456 78">
+
+                <label for="email"> E-mail</label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            </fieldset>
+
+            <fieldset>
+                <legend>Reden van contact</legend>
+                <p>Wat is uw reden voor contact?</p>
+                <div id="radiocontainer1">
+                    <input type="radio" id="vraag" class="radio" name="reason" value="vraag">
+                    <label for="vraag" class="radiolabel">Ik heb een vraag..</label>
+                </div> <!-- eind radiocontainer 1 -->
+                <div id="radiocontainer2">
+                    <input type="radio" id="complaint" class="radio" name="reason" value="klacht">
+                    <label for="complaint" class="radiolabel">Ik heb een klacht..</label>
+                </div><!-- eind radiocontainer 2 -->
+                <label for="question"> Stel hier uw vraag: </label>
+                <textarea name="question" id="question" placeholder="Stel hier je vraag.."></textarea>
+            </fieldset>
+
+            <button type="submit" name="verstuur" id="verstuur" value="verstuur"> verstuur</button>
+        </form> <!-- End contact formulier -->
+    </main>
+
+    <footer>
+        <div id="wrap-footer">
+            <section id="nieuwsbrief">
+                <h4>Schrijf je in voor de nieuwsbrief!</h4>
+                <form action="subscribed.html" method="get">
+                    <label for="email-nieuwsbrief"> Email</label>
+                    <input type="text" name="email-nieuwsbrief" id="email-nieuwsbrief" placeholder="E-mailadres" />
+                    <button type="submit" name="subcribe" id="subscribe" value="subscribe"> Subcribe</button>
+                </form>
+            </section><!-- eind section nieuwsbrief-->
+
+            <section id="gegevens">
+                <h4>Nathan Neelis</h4>
+                <p>Venatorstraat 29</p>
+                <p>1827NS te Alkmaar</p>
+                <div id="foto-nathan">
+                    <img src="images/nathan.png" alt="Foto van Nathan">
+                </div><!-- eind div foto-nathan-->
+            </section><!-- eind section gegevens-->
+
+            <section id="location">
+                <h4>Hier kan je me vinden!</h4>
+                <figure>
+                    <img src="images/locatie.jpg" alt="Locatie ImageNaat Fotografie">
+                    <figcaption>Locatie ImageNaat Fotografie</figcaption>
+                </figure>
+            </section><!-- eind section location-->
+        </div><!-- eind wrap-footer-->
+
+        <div id="copyright">
+            <p>&copy; 2019 Nathan Neelis</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

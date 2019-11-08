@@ -1,0 +1,583 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: "dosis", sans-serif;
+}
+
+
+h1 {
+    font-family: "Indie Flower", cursive;
+    font-size: 4em;
+    color: rgb(51, 51, 51);
+}
+
+h3 {
+    font-size: 2em;
+    color: rgb(51, 51, 51);
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+
+/* H1 font family code + font van https://fonts.google.com/?selection.family=Indie+Flower */
+
+/*CSS NAVIGATIE BALK*/
+nav {
+    width: 100%;
+    position: static;
+    z-index: 100;
+}
+
+
+
+nav ul {
+    list-style: none;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+    padding: 1em 2em;
+    transition-duration: 0.5s;
+}
+
+nav ul li:hover {
+    background-color: darkslategrey;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*EIND CSS NAVIGATIE BALK*/
+
+/*VIDEO START*/
+video {
+    width: 100%;
+    z-index: 1;
+
+}
+
+#title {
+    border-radius: .2em;
+    padding: 2em 3em;
+    text-align: center;
+    display: block;
+}
+
+#title img {
+    margin-top: 1.5em;
+}
+
+#title a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+
+/* VIDEO END*/
+
+
+/* Instangram content homepage */
+#instagram {
+    width: 85%;
+    margin: 0em auto;
+    padding: 10em 0;
+}
+
+#instagram h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+#instagram p {
+    width: 100%;
+    text-align: center;
+}
+
+#btn-insta {
+    margin-top: 2em;
+}
+
+#btn-insta a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+#btn-insta p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#btn-insta img {
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+/* Instagram eind */
+
+/* Begin Footer */
+footer {
+    background-color: rgb(51, 51, 51);
+    padding: 4em 0em 0em 0em;
+}
+
+footer #copyright {
+    text-align: center;
+    margin-top: 3em;
+    padding: 1em;
+    color: white;
+}
+
+#wrap-footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* Flexbox code geleerd van: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+}
+
+/* nieuwsbrief sectie footer */
+#nieuwsbrief {
+    width: 100%;
+    margin: 0;
+}
+
+#nieuwsbrief h4 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#nieuwsbrief form {
+    color: white;
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+#nieuwsbrief form input {
+    margin-bottom: 1em;
+}
+
+#nieuwsbrief form label {
+    display: none;
+    margin: 0;
+}
+
+
+/* subscribe button nieuwsbrief form - homepage */
+#subscribe {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 4em;
+    background-color: rgb(51, 51, 51);
+    border-radius: .5em;
+    color: white;
+    border-width: thin;
+    border-style: solid;
+    border-color: white;
+    border-radius: .5em;
+}
+
+#subscribe:hover {
+    background-color: white;
+    color: rgb(51, 51, 51);
+}
+
+/* eind subscribe button nieuwsbrief form - homepage */
+/* eind nieuwsbrief sectie footer */
+
+/* Begin gegevens sectie footer */
+#gegevens {
+    margin: 0 0 4em 0;
+    width: 100%;
+}
+
+
+#gegevens p {
+    text-align: center;
+
+}
+
+#gegevens h4 {
+    text-align: center;
+
+}
+
+#foto-nathan {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
+}
+
+/* Eind gegevens sectie footer */
+
+/* Begin locatie sectie footer */
+
+
+#location {
+
+    width: 100%;
+    text-align: center;
+}
+
+#location img {
+    border: 0.25em solid white;
+    margin-top: 1em;
+}
+
+
+
+
+/* Eind locatie sectie footer */
+/* Eind footer */
+
+/* CONTACT FORM START*/
+
+.title-small {
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2.5em;
+}
+
+form {
+    width: 100%;
+    margin: 0.5em auto;
+    border-radius: .5em;
+    padding: 1em;
+}
+
+
+
+form p {
+    font-size: .75em;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    text-align: left;
+    margin-bottom: .3em;
+}
+
+
+fieldset {
+    border-width: 0;
+}
+
+legend {
+    display: none;
+}
+
+label {
+    display: block;
+    font-size: .75em;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    text-align: left;
+    margin-bottom: .3em;
+}
+
+
+input {
+    padding: 1em .5em;
+    margin-bottom: 2em;
+    width: 100%;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgb(214, 215, 216);
+    border-radius: .5em;
+
+}
+
+
+input:focus {
+    border-color: royalblue;
+    border-width: thin;
+}
+
+
+
+textarea {
+    width: 100%;
+    height: 10em;
+    padding: .5em .5em;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgb(214, 215, 216);
+    border-radius: .5em;
+}
+
+#verstuur {
+    display: block;
+    width: 40%;
+    margin: 1em 0;
+    padding: 1em 2em 1em 2em;
+    background-color: rgb(51, 51, 51);
+    border-radius: 0.5em;
+    color: white;
+    border-width: 0;
+}
+
+
+#verstuur:hover {
+    background-color: darkslategray;
+    color: white;
+}
+
+
+/* START Radio buttons stylen */
+#radiocontainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: .5em;
+}
+
+#radiocontainer1 input {
+    width: 10%;
+}
+
+#radiocontainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#radiocontainer2 input {
+    width: 10%;
+}
+
+/* EIND Radio buttons stylen */
+
+/* FORM END*/
+
+/* Stories stylen start */
+/* Hero images stylen start */
+#hero-italie {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#hero-italie img {
+    width: 100%;
+    margin-bottom: 2em;
+
+}
+
+#btn-italie {
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    margin-top: 2em;
+}
+
+#btn-italie a {
+    padding: 1% 2%;
+    color: white;
+    text-decoration: none;
+}
+
+#btn-italie:hover {
+    background-color: darkslategray;
+}
+
+#hero-schotland {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#hero-schotland img {
+    width: 100%;
+    margin-bottom: 4em;
+}
+
+#btn-schotland {
+    background-color: rgb(51, 51, 51);
+    text-align: center;
+    margin-top: 3em;
+}
+
+#btn-schotland a {
+    padding: 1% 2%;
+    color: white;
+    text-decoration: none;
+}
+
+#btn-schotland:hover {
+    background-color: darkslategray;
+}
+
+/* Hero images stylen eind */
+
+
+/* storie pages stylen */
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#intro p {
+    margin: 2em 0;
+    text-align: center;
+}
+
+
+.stories img {
+    width: 100%;
+}
+
+.stories p {
+    padding: 1em 0 1.5em 0;
+    border-bottom: .15em solid rgb(51, 51, 51);
+}
+
+.stories h3 {
+    margin: 1em 0 .25em 0;
+}
+
+.stories .article-end {
+    border-bottom-width: 0;
+    margin-bottom: 4em;
+}
+
+/* Eind storie pages stylen */
+
+
+/* verstuurd feedback start */
+#verstuurd {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#verstuurd img {
+    margin-top: 4em;
+}
+
+#verstuurd p {
+    margin-bottom: 10em;
+}
+
+
+
+
+/* RESPONSIVE */
+
+/* Responsive 800px START*/
+@media all and (min-width: 800px) {
+
+    /* navigatie */
+    nav {
+        position: fixed;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    #title {
+        background-color: rgba(255, 255, 255, 0.7);
+        position: absolute;
+        top: 10em;
+        left: 25%;
+        right: 25%;
+        z-index: 2;
+
+    }
+
+
+    /* H1 head kleiner */
+    .title-small {
+        padding-top: 2em;
+    }
+
+    /* isntragram section */
+    #instagram {
+        width: 35%;
+        margin: 0em auto;
+        padding: 10em 0;
+    }
+
+    /* footer */
+    #wrap-footer {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        /* Flexbox code geleerd van: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    }
+
+    #nieuwsbrief {
+        margin: 0 2em;
+
+    }
+
+
+    #nieuwsbrief h4 {
+        text-align: left;
+        margin-left: 2em;
+    }
+
+    #nieuwsbrief form {
+        margin-left: 2em;
+
+    }
+
+    #gegevens {
+        margin: 0 2em;
+        width: 100%;
+    }
+
+    #location {
+        margin-right: 4em;
+        width: 100%;
+        text-align: right;
+    }
+
+    /* stories */
+    #hero-italie {
+        width: 50%;
+    }
+
+    #hero-schotland {
+        width: 50%;
+    }
+
+    #container {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
+
+/* Responsive 600px START*/
+@media all and (min-width: 600px) {
+
+    /*contact from */
+    form {
+        width: 35%;
+        margin: 0.5em auto;
+        border-radius: .5em;
+        padding: 1em;
+    }
+}
+
+/* Responsive hulp by Janno - docent Internetstandaarden */
+
+/* Responsive END*/
